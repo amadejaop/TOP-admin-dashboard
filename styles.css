@@ -1,0 +1,17 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 3.5fr;
+    grid-template-rows: 70px 100px auto;
+}
+
+header {
+    grid-area: 1 / 2 / 3 / 3;
+}
+
+.sidebar {
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+main {
+    grid-area: 3 / 2 / 4 / 3;
+}
