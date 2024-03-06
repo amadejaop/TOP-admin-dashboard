@@ -18,7 +18,7 @@
 
 body {
     display: grid;
-    grid-template-columns: minmax(190px, 1fr) auto;
+    grid-template-columns: 190px auto;
     grid-template-rows: 150px auto;
     margin: 0;
     padding: 0;
@@ -37,7 +37,12 @@ button > svg {
     vertical-align: bottom;
 }
 
-
+.card {
+    background-color: var(--white);
+    border-left: 5px solid var(--yellow);
+    border-radius: 10px;
+    padding: 10px;
+}
 
 header {
     background-color: var(--white);
