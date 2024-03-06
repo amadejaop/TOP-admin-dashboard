@@ -1,50 +1,104 @@
 :root {
     --crimson: #991b1b;
-    --light: #dbeafe;
+    --gray: #e5e7eb;
+    --yellow: #fbbf24;
+    --white: #fff;
+    --black: #030712;
+ 
+}
+
+.avatar {
+    border-radius: 50%;
 }
 
 body {
     display: grid;
     grid-template-columns: minmax(180px, 1fr) auto;
-    grid-template-rows: 70px 100px auto;
+    grid-template-rows: 150px auto;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+button {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+button > svg {
+    vertical-align: bottom;
+}
+
 header {
-    grid-area: 1 / 2 / 3 / 3;
+    background-color: var(--white);
+    border-bottom: 2px solid #9ca3af;
+    display: flex;
+    flex-direction: column;
+    grid-area: 1 / 2 / 2 / 3;
+    padding: 10px 25px;
 }
 
 h1 {
-    color: white;
+    color: var(--white);
     display: inline;
     font-size: 1.3rem;
     margin-top: -5px;
     padding-top: -5px;
 }
 
-.sideicon {
-    display: inline;
-    vertical-align: bottom;
+.icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
 }
 
-li {
-    display: grid;
-    grid-template-columns: 20px auto;
-    padding: 5px 0;
+input[type="search"] {
+    background-color: var(--gray);
+    border: none;
+    border-radius: 15px;
 }
 
-li > a {
-    color: white;
-    text-decoration: none;
+.large {
+    font-size: 1.05rem;
     font-weight: bold;
-    padding-left: 15px;
+}
+
+.links {
+    display: flex;
+    gap: 15px;
 }
 
 main {
     grid-area: 3 / 2 / 4 / 3;
+}
+
+.message {
+    display: flex;
+    align-items: center;
+}
+
+.message p {
+    margin: 0;
+    padding: 0 10px;
+}
+
+.navbottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+}
+
+.navtop {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .sidebar {
@@ -53,8 +107,39 @@ main {
     padding: 15px;
 }
 
-ul {
+.sidebar > nav > ul {
     margin: 0;
     padding: 20px 5px;
 }
 
+.sidebar > nav > ul > li {
+    display: grid;
+    grid-template-columns: 20px auto;
+    padding: 5px 0;
+}
+
+.sidebar > nav > ul > li > a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 15px;
+}
+
+.sidebar p {
+    color: var(--black);
+    font-size: 0.5rem;
+}
+
+.sidebar p a {
+    color: var(--black);
+}
+
+.sideicon {
+    display: inline;
+    vertical-align: bottom;
+}
+
+.small {
+    font-size: 0.7rem;
+    font-weight: bold;
+}
