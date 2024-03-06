@@ -56,6 +56,14 @@ h1 {
     padding-top: -5px;
 }
 
+h2 {
+    font-size: 1.15rem;
+}
+
+h3 {
+    font-size: 1.07rem;
+}
+
 .icons {
     display: flex;
     justify-content: space-between;
@@ -95,7 +103,9 @@ input[type="search"] {
 }
 
 main {
+    background-color: var(--gray);
     grid-area: 3 / 2 / 4 / 3;
+    padding: 0 25px 20px 25px;
 }
 
 .message {
